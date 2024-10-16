@@ -1,6 +1,6 @@
-#STEPS:
+# STEPS:
 
-##Configure nginx-ingress controller
+## Configure nginx-ingress controller
 
 Ref:  https://learn.microsoft.com/en-us/azure/aks/app-routing
 

@@ -1,4 +1,4 @@
-# STEPS:
+# Steps:
 
 ## Configure nginx-ingress controller
 
@@ -6,7 +6,7 @@ Ref:  https://learn.microsoft.com/en-us/azure/aks/app-routing
 
 Managed NGINX ingress with the application routing add-on
 
-# Enable approuting in your aks cluster.
+## Enable approuting in your aks cluster.
 
 Enable on an existing cluster
 
@@ -14,7 +14,7 @@ Enable on an existing cluster
 
 `$ kubectl get pods -n app-routing-system`
 
-# Create new ns and deploy blue/green apps
+## Create new ns and deploy blue/green apps
 
 `$ kubectl create namespace app-store`
 
@@ -24,14 +24,16 @@ Enable on an existing cluster
 
 `$ kubectl get all -n app-store`
 
-# Create path-based ingress to run apps
+## Create path-based ingress to run apps
 
 `$ kubectl apply -f ingress.yaml -n app-store`
 
 `$ kubectl get ingress -n app-store`
 
-# Run Apps
+## Run Apps
 
 `http://<Address_of_path-based_ingress>/blue`
 
 `http://<Address_of_path-based_ingress>/green`
+
+## Done
